@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function switchpic(result)
+        {
+        var img = document.getElementById("pic");
+
+        var img1 = "pic1.jpg";
+        var img2 = "pic2.jpg";
+
+            if(result === "change")
+            {
+                img.src = img1;
+            }
+            else if (result === "revert")
+            {
+                img.src = img2;
+            }
+
+        }
+    </script>
+    
+    
+    <h1>Image Swapper</h1>
+    <br>
+    <img id ="pic" src="pic2.jpg" alt="Skeleton looking at its phone" width="300" height="300">
+    <br>
+    <button onclick="switchpic('revert')">Revert</button> 
+    <br>
+    <button onclick="switchpic('change')">Change</button>
+</body>
+</html>

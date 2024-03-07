@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="redirect()">
+    <script>
+        function redirect()
+        {
+            var conf = confirm("You will be redirected to a different page");
+
+            if (conf){
+                window.open("page2.html", "_self");
+            }
+        }
+    </script>    
+
+    <h1> Welcome to the Home Page!</h1>
+
+</body>
+</html>
